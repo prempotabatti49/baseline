@@ -6,6 +6,8 @@
 
 from dataclasses import dataclass
 from functools import partial
+
+import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import RandomizedSearchCV
@@ -60,8 +62,8 @@ if __name__ == "__main__":
 
     @dataclass
     class Dataset:
-        X: list
-        y: list
+        X: np.ndarray
+        y: np.ndarray
 
 
     def objective_function(X, y, params_):
