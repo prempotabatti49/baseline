@@ -43,20 +43,20 @@ if __name__ == "__main__":
     }
 
 
-    model = GridSearchCV(
-        estimator=classifier,
-        param_grid=param_grid,
-        scoring="accuracy",
-        verbose=10,
-        n_jobs=1,
-        cv=5,
-    )
-    model.fit(X, y)
-    print("--------------------")
-    print(model.best_score_)
-    print("--------------------")
-    print(model.best_estimator_.get_params())
-    print("--------------------")
+    # model = GridSearchCV(
+    #     estimator=classifier,
+    #     param_grid=param_grid,
+    #     scoring="accuracy",
+    #     verbose=10,
+    #     n_jobs=1,
+    #     cv=5,
+    # )
+    # model.fit(X, y)
+    # print("--------------------")
+    # print(model.best_score_)
+    # print("--------------------")
+    # print(model.best_estimator_.get_params())
+    # print("--------------------")
 
     ##Hyperopt
 
